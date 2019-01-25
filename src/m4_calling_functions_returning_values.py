@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Drew Roberts.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m4t_tester
 
@@ -38,7 +38,7 @@ def main():
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # DONE: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -62,6 +62,12 @@ def run_test_sum_of_digits():
     print('Testing the   sum_of_digits   function:')
     print('--------------------------------------------------')
 
+    # My code 1
+    expected = 12
+    answer = sum_of_digits(651)
+    print(expected)
+    print('answer', answer)
+
     # Test 1:
     expected = 16
     answer = sum_of_digits(826)
@@ -72,9 +78,26 @@ def run_test_sum_of_digits():
     # TO DO: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # -------------------------------------------------------------------------
+    # Test 2
+
+    expected = 12
+    answer = sum_of_digits((2451))
+    print(expected)
+    print('actual', answer)
+
+    expected = 19
+    answer = sum_of_digits(7732)
+    print(expected)
+    print('answer', answer)
+
+    expected = 9
+    answer = sum_of_digits(342)
+    print(expected)
+    print('answer', answer)
 
 
 def sum_of_digits(number):
+
     """
     What comes in:  An integer.
     What goes out:  The sum of the digits in the given integer.
@@ -110,7 +133,7 @@ def sum_of_digits(number):
 def run_test_digits_in_cube():
     """ Tests the   digits_in_cube   function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this function.
+    # DONE: 3. Implement this function.
     #   It TESTS the  digits_in_cube  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -135,6 +158,31 @@ def run_test_digits_in_cube():
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
 
+    n = 5
+    n = n**3
+    expected = 8
+    print('answer', expected)
+    print(sum_of_digits(n))
+
+    n = 6
+    n = n ** 3
+    expected = 9
+    sum_of_digits(n)
+    print('answer =', expected)
+    print(sum_of_digits(n))
+
+    n = 7
+    n = n ** 3
+    expected = 10
+    print('answer =', expected)
+    print(sum_of_digits(n))
+
+    n = 4
+    n = n ** 3
+    expected = 10
+    print('answer =', expected)
+    print(sum_of_digits(n))
+
 
 def digits_in_cube(n):
     """
@@ -145,8 +193,9 @@ def digits_in_cube(n):
       If the integer (n) is 5    (so n cubed is 125),
       this function returns (1 + 2 + 5), which is 8.
     """
+
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
@@ -171,6 +220,11 @@ def run_test_digits_in_power():
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
 
+    expected = 10
+    answer = digits_in_power(3, 3)
+    print('answer =', expected)
+    print(answer)
+
 
 def digits_in_power(n, k):
     """
@@ -191,6 +245,7 @@ def digits_in_power(n, k):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ###########################################################################
     # -------------------------------------------------------------------------
+    
 
 
 def run_test_fancy_sums_of_digits():
