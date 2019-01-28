@@ -12,6 +12,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 import rosegraphics as rg
 import math
 
+
 def main():
     print_sequence1()
     draw_circles1()
