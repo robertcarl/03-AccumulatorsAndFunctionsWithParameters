@@ -155,6 +155,7 @@ def print_sequence3():
     for k in range(1, 101, 1):
         print(k)
 
+
 def draw_circles3():
     """
     -- Constructs an rg.RoseWindow whose width and height are both 300.
